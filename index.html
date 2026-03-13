@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Pratt | Game Design Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">BP</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero">
+    <div class="hero-content">
+      <p class="hero-label">Game Designer &amp; Developer · PhD Student · UCSC</p>
+      <h1>Benjamin <span class="accent">Pratt</span></h1>
+      <p class="hero-sub">
+        Game designer and developer focused on interactive systems,
+        procedural generation, and player experience.
+      </p>
+      <div class="hero-links">
+        <a href="https://namea1.itch.io/" target="_blank" class="btn btn-primary">itch.io Games</a>
+        <a href="https://github.com/nameA42" target="_blank" class="btn btn-outline">GitHub</a>
+        <a href="https://www.linkedin.com/in/benjamin-pratt-84128323b/" target="_blank" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a PhD student in Computational Media at UC Santa Cruz, where I also
+            earned my BS in Computer Game Design (GPA 3.91). I currently TA for
+            CMPM 120 and CMPM 147, and work as a Graduate Student Researcher at the
+            Assistive Design Lab (ADL).
+          </p>
+          <p>
+            My games span Phaser, Godot, Unity, and Unreal — from browser-playable
+            arcade titles to narrative horror experiences. I'm drawn to rapid
+            prototyping, procedural systems, and audio-driven design. Outside of
+            games, I've competed nationally in Ultimate Frisbee and have a background
+            in fabrication, 3D art, and robotics.
+          </p>
+          <a href="assets/img/Ben Pratt Resume View.pdf" target="_blank" class="btn btn-outline" id="resume-btn">View Resume</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Games Released</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3.91</span>
+            <span class="stat-label">Undergrad GPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Watcher Rating</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">TA</span>
+            <span class="stat-label">CMPM 120 &amp; 147</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">
+        Click any card to play or view the project.
+        Add or remove projects by editing <code>js/projects.js</code>.
+      </p>
+
+      <!-- Filter buttons -->
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Populated by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Game Engines</h3>
+          <ul>
+            <li>Godot / GDScript</li>
+            <li>Unity / C#</li>
+            <li>Unreal / BluePrint</li>
+            <li>Phaser (JS)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <ul>
+            <li>Python / Python3</li>
+            <li>C / C# / C++</li>
+            <li>Java / JavaScript / HTML</li>
+            <li>R / Scheme / Shell</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Art &amp; Audio</h3>
+          <ul>
+            <li>Blender</li>
+            <li>Maya (Autodesk)</li>
+            <li>CAD (Autodesk)</li>
+            <li>Meta Sounds (UE5)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Research &amp; Other</h3>
+          <ul>
+            <li>Deep Learning</li>
+            <li>Rapid Prototyping</li>
+            <li>Modding</li>
+            <li>Lathing, Milling, Welding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">Open to collaborations, research opportunities, and interesting projects.</p>
+      <div class="contact-links">
+        <a href="mailto:bepratt@ucsc.edu">bepratt@ucsc.edu</a>
+        <span class="divider">·</span>
+        <a href="https://github.com/nameA42" target="_blank">GitHub</a>
+        <span class="divider">·</span>
+        <a href="https://namea1.itch.io/" target="_blank">itch.io</a>
+        <span class="divider">·</span>
+        <a href="https://www.linkedin.com/in/benjamin-pratt-84128323b/" target="_blank">LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2026 Benjamin Pratt</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

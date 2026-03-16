@@ -295,9 +295,48 @@ section {
 
 .filter-bar {
   display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.55rem;
   margin-bottom: 2rem;
+}
+
+/* Search */
+.filter-search-row { margin-bottom: 0.2rem; }
+
+.project-search {
+  width: 100%;
+  max-width: 380px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.55rem 1rem;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.project-search:focus { border-color: var(--accent); }
+.project-search::placeholder { color: var(--muted); }
+
+/* Filter rows */
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.filter-row-quick { gap: 0.5rem; }
+
+.filter-group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 90px;
 }
 
 .filter-btn {
@@ -321,6 +360,18 @@ section {
   color: #fff;
 }
 
+/* Highlighted quick-access buttons (Research, Modding) */
+.filter-btn-hl {
+  border-color: var(--accent);
+  color: var(--accent2);
+}
+.filter-btn-hl:hover,
+.filter-btn-hl.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -337,7 +388,6 @@ section {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  text-decoration: none;
   color: inherit;
 }
 
@@ -345,7 +395,6 @@ section {
   transform: translateY(-4px);
   border-color: var(--accent);
   box-shadow: 0 8px 32px rgba(124, 92, 252, 0.18);
-  color: inherit;
 }
 
 .project-card.hidden { display: none; }
@@ -428,6 +477,29 @@ section {
   color: var(--accent2);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.project-card.row-hidden { display: none; }
+
+.show-more-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: var(--radius);
+  padding: 0.55rem 2rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all var(--transition);
+}
+
+.show-more-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent2);
 }
 
 /* =========================================
